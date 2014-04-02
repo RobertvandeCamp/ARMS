@@ -17,14 +17,10 @@ public class Aggregator {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public AggregationData aggregate() {
-        AggregationData aggregationData = new AggregationData();
-        return aggregationData;
+    public TradeAndReferenceData aggregate() {
+        TradeAndReferenceData tradeAndReferenceData = new TradeAndReferenceData();
+        return tradeAndReferenceData;
     }
 
-
-    private class AggregationData {
-
-    }
 
 }
