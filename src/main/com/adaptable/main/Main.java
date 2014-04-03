@@ -11,7 +11,7 @@ public class Main {
     public static final String BASE_URI = "http://localhost:8080/arms/";
 
     public static HttpServer startServer() {
-        final ResourceConfig rc = new ResourceConfig().packages("com.adaptable.distribute", "com.adaptable.aggregate");
+        final ResourceConfig rc = new ResourceConfig().packages("com.adaptable.riskmanagement");
 
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
     }
